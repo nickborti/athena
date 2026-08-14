@@ -1,5 +1,6 @@
 "use client";
 import StatusCard from "@/components/StatusCard";
+import MarketControls from "@/components/MarketControls";
 import { useState } from "react";
 
 export default function Home() {
@@ -37,12 +38,8 @@ export default function Home() {
               />
             );
           })}
-          <button
-            className="rounded bg-blue-600 px-3 py-2 text white"
-            onClick={toggleMarket}
-          >
-            Toggle Market
-          </button>
+
+          <MarketControls onToggle={toggleMarket} />
         </div>
       </section>
     </main>
