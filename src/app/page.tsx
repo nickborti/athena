@@ -15,6 +15,10 @@ export default function Home() {
     { label: "Risk Level", value: "Low" },
   ];
 
+  const toggleMarket = () => {
+    setMarketOpen(!marketOpen);
+  };
+
   return (
     <main className="min-h-screen bg-zinc-950 text-white-p8">
       <section className="mx-auto-max-w-5xl">
@@ -29,10 +33,14 @@ export default function Home() {
                 label={label}
                 value={value}
                 color={color}
+                onClick={label === "Market Status" ? toggleMarket : undefined}
               />
             );
           })}
-          <button onClick={() => setMarketOpen(!marketOpen)}>
+          <button
+            className="rounded bg-blue-600 px-3 py-2 text white"
+            onClick={toggleMarket}
+          >
             Toggle Market
           </button>
         </div>
