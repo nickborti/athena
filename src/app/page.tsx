@@ -34,7 +34,6 @@ export default function Home() {
                 label={label}
                 value={value}
                 color={color}
-                onClick={label === "Market Status" ? toggleMarket : undefined}
               />
             );
           })}
