@@ -4,6 +4,8 @@ import MarketControls from "@/components/MarketControls";
 import { useState } from "react";
 import DashboardHeader from "@/components/DasboardHeader";
 import MarketOverview from "@/components/MarketOverview";
+import MarketChart from "@/components/MarketChart";
+import SignalPanel from "@/components/SignalPanel";
 
 export default function Home() {
   const [marketOpen, setMarketOpen] = useState(true);
@@ -27,6 +29,10 @@ export default function Home() {
       <section className="mx-auto-max-w-5xl">
         <DashboardHeader />
         <MarketOverview />
+        <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
+          <MarketChart className="lg:col-span-2" />
+          <SignalPanel />
+        </div>
 
         <div className="mt-8 grid gap-4 md-grid-cols-3">
           {cards.map(({ label, value, color }) => {
