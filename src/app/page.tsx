@@ -2,6 +2,7 @@
 import StatusCard from "@/components/StatusCard";
 import MarketControls from "@/components/MarketControls";
 import { useState } from "react";
+import DashboardHeader from "@/components/DasboardHeader";
 
 export default function Home() {
   const [marketOpen, setMarketOpen] = useState(true);
@@ -23,8 +24,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-zinc-950 text-white-p8">
       <section className="mx-auto-max-w-5xl">
-        <h1 className="text-4xl font-bold">Axiom</h1>
-        <p className="mt-2 text-zinc-400">Trading Intelligence Dashboard</p>
+        <DashboardHeader />
 
         <div className="mt-8 grid gap-4 md-grid-cols-3">
           {cards.map(({ label, value, color }) => {
