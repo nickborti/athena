@@ -17,7 +17,17 @@ export default function SignalPanel() {
         {signal.status === "IDLE" ? "—" : "SIGNAL"}
       </p>
       <p className="mt-4 text-sm text-zinc-500">{signal.message}</p>
-      <p className="mt-6 text-sm font-medium text-zinc-500">STATUS: IDLE</p>
+      <p className="mt-6 text-sm font-medium text-amber-400">STATUS: IDLE</p>
+      <div className="mt-8 border-t border-zinc-800 pt-6">
+        <p className="text-sm font-medium text-zinc-400">Setup Analysis</p>
+        <p className="mt-2 text-sm text-zinc-500">
+          Waiting for market conditions...
+        </p>
+        <p className="mt-4 text-sm text-zinc-400">Strategy: —</p>
+        <p className="mt-2 text-sm text-zinc-400">Expiry: —</p>
+        <p className="mt-2 text-sm font-medium text-zinc-300">Entry: —</p>
+        <p className="mt-2 text-sm text-zinc-400">Confidence: —</p>
+      </div>
     </div>
   );
 }
