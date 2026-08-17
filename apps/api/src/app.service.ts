@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 
-type MarketData = {
+export type MarketData = {
   symbol: string;
   price: number;
   change: number;
