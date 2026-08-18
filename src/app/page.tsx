@@ -6,16 +6,14 @@ import DashboardControls from "@/components/DashboardControls";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-zinc-950 text-white-p8">
+    <main className="h-screen overflow-hidden bg-zinc-950 text-white-p8">
       <section className="mx-auto-max-w-5xl">
         <DashboardHeader />
         <MarketOverview />
-        <div className="mt-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
+        <div className="mt-8 mb-8 grid grid-cols-1 gap-6 lg:grid-cols-3">
           <MarketChart className="lg:col-span-2" />
           <SignalPanel />
         </div>
-
-        <DashboardControls />
       </section>
     </main>
   );
