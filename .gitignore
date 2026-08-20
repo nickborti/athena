@@ -42,3 +42,5 @@ next-env.d.ts
 
 # python
 apps/research/.venv/
+apps/research/__pycache__/
+*.py[cod]
