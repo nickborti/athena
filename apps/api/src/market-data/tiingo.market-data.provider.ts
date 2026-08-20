@@ -21,6 +21,8 @@ export class TiingoMarketDataProvider implements MarketDataProvider {
     url.searchParams.set('endDate', to);
     url.searchParams.set('resampleFreq', timeframe === '1m' ? '1min' : '5min');
 
+    console.log('Tiingo URL:', url.toString());
+
     const response = await fetch(url, {
       headers: {
         Authorization: `Token ${apiKey}`,
