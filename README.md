@@ -1,4 +1,4 @@
-# Axiom
+# Athena
 
 A trading research and decision-support platform focused on market data, strategy research, and backtesting.
 
