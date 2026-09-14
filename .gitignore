@@ -42,5 +42,6 @@ next-env.d.ts
 
 # python
 apps/research/.venv/
-apps/research/__pycache__/
+__pycache__/
 *.py[cod]
+*.egg-info/
