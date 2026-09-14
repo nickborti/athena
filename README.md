@@ -2,7 +2,7 @@
 
 A trading research and decision-support platform focused on market data, strategy research, and backtesting.
 
-Axiom is currently under active development and experimentation.
+Athena is currently under active development and experimentation.
 
 ## Status
 
@@ -17,4 +17,4 @@ Axiom is currently under active development and experimentation.
 
 ## Disclaimer
 
-Axiom is an experimental project and does not provide financial or investment advice.
+Athena is an experimental project and does not provide financial or investment advice.
